@@ -4,7 +4,7 @@ const cors = require('cors');
 const userRoutes = require('./routes/routes'); // Assuming your routes file is named userRoutes.js
 
 // MongoDB connection
-const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost:27017/formvalidation';
+const mongoUrl = process.env.MONGO_URL || 'mongodb+srv://hotsku:Kinleynorbu5@formvalidation.ual1z.mongodb.net/?retryWrites=true&w=majority&appName=formvalidation';
 
 mongoose.connect(mongoUrl)
   .then(() => console.log('Connected to MongoDB'))
